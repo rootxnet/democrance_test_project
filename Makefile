@@ -55,3 +55,6 @@ app:
 
 test:
 	docker compose run --rm cli python manage.py test
+
+ruff:
+	docker compose run --rm cli ruff check . --fix
